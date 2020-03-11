@@ -11,6 +11,7 @@ noOfInstructionSC = 0
 noOfMacroCall = 0
 noOfInstructionMC = 0
 expandedCode = 0
+values = []
 argName = ''
 
 mc = int(input("Enter the number of Macro Definition code line : "))
@@ -43,7 +44,9 @@ for i in range(sc):
     if macroName in sourceCode[i]: 
         noOfInstructionMC = 0
         temp = str(sourceCode[i])
-        macroName, argValue = temp.split()  
+        macroName, argValue = temp.split()
+        if argValue not in values:
+            values.append(argValue)  
         for j in range(2, mc-1):
             if argName in macroDefinition[j]:
                 temp = macroDefinition[j]
@@ -64,4 +67,6 @@ print()
 print("No of instructions in input source code : {}".format(noOfInstructionSC))
 print("No of macro call : {}".format(noOfMacroCall))
 print("No of instructions defined in macro call : {}".format(noOfInstructionMC))
+for i in range(len(values)):
+    print("Actual arguement during {} Macro call 'ABHISHEK' = {}".format(i+1, values[i]))
 print("Total number of isntructions in expanded code : {}".format(expandedCode))
