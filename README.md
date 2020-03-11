@@ -53,7 +53,7 @@ Statistical output:
 Number of instructions in input source code (excluding Macro calls) = 5
 Number of Macro calls = 2
 Number of instructions defined in the Macro call = 3
-Actual argument during first Macro call “RAHUL” = 30
-Actual argument during second Macro call “RAHUL” = 55
+Actual argument during first Macro call “ABHISHEK” = 30
+Actual argument during second Macro call “ABHISHEK” = 55
 Total number of instructions in the expanded source code = 11
 ```
