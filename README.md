@@ -18,15 +18,17 @@ Macro.
 Input 1: Input Source code with Macro calls
 ```
 MOV R
-RAHUL 30
+ABHISHEK 30
 DCR R
 AND R
-RAHUL 55
+ABHISHEK 55
 MUL 88
 HALT
+```
 Input 2: Macro definition
+```
 MACRO
-RAHUL &ARG
+ABHISHEK &ARG
 ADD & ARG
 SUB &ARG
 OR &ARG
