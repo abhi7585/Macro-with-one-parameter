@@ -27,9 +27,9 @@ HALT
 Input 2: Macro definition
 MACRO
 RAHUL &ARG
- ADD & ARG
- SUB &ARG
- OR &ARG
+ADD & ARG
+SUB &ARG
+OR &ARG
 MEND
 ```
 Output source code after Macro expansion:
@@ -47,10 +47,11 @@ MUL 88
 HALT
 ```
 Statistical output:
-
+```
 Number of instructions in input source code (excluding Macro calls) = 5
 Number of Macro calls = 2
 Number of instructions defined in the Macro call = 3
 Actual argument during first Macro call “RAHUL” = 30
 Actual argument during second Macro call “RAHUL” = 55
 Total number of instructions in the expanded source code = 11
+```
